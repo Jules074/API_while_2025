@@ -1,7 +1,7 @@
 #a. Receber texto
 #b. Receber min e max caract
 
-from q02_funcoes import inteiro, int_positivo
+from q02_funcoes.py import inteiro, int_positivo
 
 def main():
     texto = min_max('insira um limite minimo:\n',\
