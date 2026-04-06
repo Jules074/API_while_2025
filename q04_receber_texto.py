@@ -1,10 +1,10 @@
 #a. Receber texto
 #b. Receber min e max caract
 
-from q02_funcoes.py import inteiro, int_positivo
+from utilitarios import int_positivo, inteiro
 
 def main():
-    texto = min_max('insira um limite minimo:\n',\
+    texto = min_max_carac('insira um limite minimo:\n',\
                       'insira um limite maximo:\n',\
                       'insira um texto:\n')
     print(texto)
@@ -12,8 +12,8 @@ def main():
     #texto = receber_texto('insira um texto:\n')
     #print(texto)
 
-'''
-def inteiro(label: str):
+
+"""def inteiro(label: str):
     while True:
         try:   
             n = int(input(label))
@@ -26,8 +26,8 @@ def int_positivo(label: str):
     while 0 > n:
         print('numero negativo, tente novamente')
         n = inteiro(label)
-    return n
-'''
+    return n"""
+
 
 def receber_texto(label: str):
     while True:
@@ -37,7 +37,7 @@ def receber_texto(label: str):
         except:
             print('algo deu errado, tente novamente')
 
-def min_max(label1: str, label2: str, label3: str):
+def min_max_carac(label1: str, label2: str, label3: str):
     limite_min = int_positivo(label1)
     limite_max = int_positivo(label2)
     n = receber_texto(label3)
