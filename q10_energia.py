@@ -13,7 +13,7 @@
 #g. Escreva na tela todos os extratos calculados no padrão abaixo:
 
 def main():
-    quant_familias = 2
+    quant_familias = int(input('quantas familias? '))
     get_dados(quant_familias)
     
 #Bandeira Tarifária: R${} (valor por 100KWh: R${})
